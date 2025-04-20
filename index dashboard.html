@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Dashboard | Om Kshirsagar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <div class="min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-indigo-700 text-white hidden md:block">
+      <div class="p-6 text-2xl font-bold border-b border-indigo-500">Dashboard</div>
+      <nav class="p-4 space-y-4">
+        <a href="#" class="block hover:bg-indigo-600 p-2 rounded">Overview</a>
+        <a href="#" class="block hover:bg-indigo-600 p-2 rounded">Reports</a>
+        <a href="#" class="block hover:bg-indigo-600 p-2 rounded">Analytics</a>
+        <a href="#" class="block hover:bg-indigo-600 p-2 rounded">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Top Navbar -->
+      <header class="bg-white shadow px-6 py-4 flex items-center justify-between">
+        <h1 class="text-xl font-semibold">Welcome, Om Kshirsagar</h1>
+        <div>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">Log Out</button>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main class="p-6 space-y-6">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-lg font-semibold mb-2">Total Visitors</h2>
+            <p class="text-2xl font-bold text-indigo-600">12,345</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-lg font-semibold mb-2">Monthly Sales</h2>
+            <p class="text-2xl font-bold text-indigo-600">₹98,000</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-lg font-semibold mb-2">New Users</h2>
+            <p class="text-2xl font-bold text-indigo-600">256</p>
+          </div>
+        </div>
+        <!-- Extra Content -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-bold mb-4">Latest Reports</h2>
+          <p class="text-gray-600">Here you can add charts, graphs, or data tables to visualize report metrics.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
